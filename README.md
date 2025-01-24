@@ -1,4 +1,4 @@
-![alt text](image.png)
+![alt text](./assets/image.png)
 
 # Live Demo 
 https://silameas.github.io/sila-ck-notification-npm/
