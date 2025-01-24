@@ -1,5 +1,5 @@
 {
-  "homepage": "http://SILAMEAS.git.io/sila-ck-notification-npm",
+  "homepage": "https://SILAMEAS.github.io/sila-ck-notification-npm",
   "name": "sila-ck-notification-npm",
   "version": "0.0.1",
   "description": "notification with flexible position style and animation",
@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "rollup": "rollup -c --bundleConfigAsCjs",
