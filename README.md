@@ -1,4 +1,4 @@
-![alt text](./assets/image.png)
+![alt text](./assets/image.png](https://res.cloudinary.com/ddz6bkk0m/image/upload/v1737700146/Notification_dyqzp3.png))
 
 # Live Demo 
 https://silameas.github.io/sila-ck-notification-npm/
