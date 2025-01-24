@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9191eea3-3831-4430-8443-0382cd0d02b6)![image](https://github.com/user-attachments/assets/3bad654c-7678-41d3-aa12-217a61ff1565)
+![image](https://github.com/user-attachments/assets/9191eea3-3831-4430-8443-0382cd0d02b6)
 
 
 # Live Demo 
