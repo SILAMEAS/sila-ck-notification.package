@@ -1,7 +1,7 @@
 {
   "homepage": "https://SILAMEAS.github.io/sila-ck-notification-npm",
   "name": "sila-ck-notification-npm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "notification with flexible position style and animation",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
