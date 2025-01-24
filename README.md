@@ -1,53 +1,74 @@
-# Live Demo
+# Live Demo 
+https://silameas.github.io/sila-ck-notification-npm/
 
 
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
+function App() {
+  const [position,setPosition]=useState<PositionType>('bottom-left');
+  const [type,setType]=useState<typeNotification>('success');
+  const [animation,setAnimation]=useState<typeAnimation>('fade')
+  const {NotificationComponent,triggerNotification}=useNotification(position);
+React.useEffect(()=>{
+  triggerNotification({
+    type,
+    message: `This is a ${type} message!`,
+    duration: 3000,
+    onClose: function (): void {
+      throw new Error('Function not implemented.');
     },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    animation
+  })
+},[position,type,animation])
+  return (
+    <>
+    {NotificationComponent}
+    {/* Button Animation */}
+        <div>
+        <h1> Button Animation </h1>
+        <button onClick={()=>{
+        setType('success')
+        }}>Success</button>
+        <button onClick={()=>{
+        setType('error')
+        }}>Error</button>
+        <button onClick={()=>{
+       setType('info')
+        }}>Info</button>
+        <button onClick={()=>{
+        setType('warning')
+        }}>Warning</button>
+      </div>
+    {/* Button Position */}
+      <div>
+        <h1> Button Position </h1>
+        <button onClick={()=>{
+        setPosition('bottom-left')
+        }}>Bottom Left</button>
+        <button onClick={()=>{
+        setPosition('bottom-right')
+        }}>Bottom Right</button>
+        <button onClick={()=>{
+        setPosition('top-right')
+        }}>Top Right</button>
+        <button onClick={()=>{
+        setPosition('top-left')
+        }}>Top Left</button>
+      </div>
+    {/* Button Type */}
+    <div>
+        <h1> Button Type </h1>
+        <button onClick={()=>{
+       setAnimation('fade')
+        }}>Fade</button>
+        <button onClick={()=>{
+     setAnimation('pop')
+        }}>Pop</button>
+        <button onClick={()=>{
+       setAnimation('slide')
+        }}>Slide</button>
+  
+      </div>
+    </>
+  )
+}
