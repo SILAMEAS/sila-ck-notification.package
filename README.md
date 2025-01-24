@@ -1,4 +1,5 @@
-![alt text](https://asset.cloudinary.com/ddz6bkk0m/641ac41b44133d4886b24abef8e33a6f)
+![image](https://github.com/user-attachments/assets/9191eea3-3831-4430-8443-0382cd0d02b6)![image](https://github.com/user-attachments/assets/3bad654c-7678-41d3-aa12-217a61ff1565)
+
 
 # Live Demo 
 https://silameas.github.io/sila-ck-notification-npm/
