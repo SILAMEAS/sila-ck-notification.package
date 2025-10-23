@@ -1,2 +1,5 @@
 import useNotification from "./hooks/useNotification";
-export default useNotification;
+import Test from "./components/Test";
+
+export { useNotification, Test };
+export default Test;

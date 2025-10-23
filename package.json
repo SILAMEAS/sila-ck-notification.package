@@ -1,7 +1,7 @@
 {
   "homepage": "#",
   "name": "ctable-mui",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "notification with flexible position style and animation",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
