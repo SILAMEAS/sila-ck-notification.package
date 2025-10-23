@@ -43,15 +43,10 @@ const useNotification = (
     <div
       className={`notification-container ${position} ${position.split("-")[0]}`}
     >
-      {notifications.map((notification, index) => (
-        <Notification
-          key={notification.id}
-          {...notification}
-          onClose={() => handleNotificationClose(index)}
-        />
-      ))}
+      Hello My Name is
     </div>
   );
+
 
   return { NotificationComponent, triggerNotification };
 };
